@@ -4,3 +4,8 @@
  * input: number (threshold)
  * output: boolean
  */
+function isGreaterThan(value, threshold) {
+    return value > threshold;
+}
+
+export default isGreaterThan;

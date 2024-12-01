@@ -4,3 +4,8 @@
  * input: number (summand2)
  * output: boolean
  */
+function isAdditionGreaterThanFifty(summand1, summand2) {
+    return (summand1 + summand2) >= 50;
+}
+
+module.exports = isAdditionGreaterThanFifty;

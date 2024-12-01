@@ -5,15 +5,11 @@
  * input: array (collection) 
  * output: string
  */
+function transformCollectionToString(collection) {
+    if (!Array.isArray(collection) || collection.length === 0) {
+        return '';
+    }
+    return collection.join(' | ');
+}
 
-/**
- * CASE #1
- * input: ['apple', 'grapes', 'strawberries']
- * output: "apple | grapes | strawberries"
- */
-
-/**
- * CASE #2
- * input: []
- * output: ""
- */
+export default transformCollectionToString;

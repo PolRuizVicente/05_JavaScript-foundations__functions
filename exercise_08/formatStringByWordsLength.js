@@ -5,14 +5,13 @@
  * input: string (sentence) 
  * output: string
  */
+function formatStringByWordsLength(sentence) {
+    const words = sentence.trim().split(/\s+/);
+    if (words.length > 5) {
+        return sentence.toUpperCase();
+    } else {
+        return sentence.toLowerCase();
+    }
+}
 
-/**
- * CASE #1
- * input: "This is a long, long, long sentence."
- * output: "THIS IS A LONG, LONG, LONG SENTENCE."
- */
-
-/**
- * CASE #2 * input: "This is short one."
- * output: "this is short one."
- */
+export default formatStringByWordsLength;

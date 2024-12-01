@@ -4,3 +4,9 @@
  * input: number (threshold)
  * output: number
  */
+
+function getDistanceFromThreshold(value, threshold) {
+    return value - threshold;
+}
+
+export default getDistanceFromThreshold;
